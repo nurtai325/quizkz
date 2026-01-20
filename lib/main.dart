@@ -17,6 +17,7 @@ class QuizApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
         useMaterial3: true,
       ),
+      debugShowCheckedModeBanner: false,
       home: const MainPage(),
     );
   }
@@ -48,21 +49,14 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-  items: const [
-    BottomNavigationBarItem(
-      icon: Icon(Icons.home),
-      label: 'Басты бет',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.info),
-      label: 'Ақпарат',
-    ),
-  ],
-  currentIndex: _selectedIndex,
-  selectedItemColor: Colors.amber,
-  onTap: _onItemTapped,
-),
-
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Басты бет'),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'Ақпарат'),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.amber,
+        onTap: _onItemTapped,
+      ),
     );
   }
 }
