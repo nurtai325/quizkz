@@ -31,8 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_animate: ^4.5.2
-  url_launcher: ^6.3.2
-  shared_preferences: ^2.5.4
+  shared_preferences: ^2.3.5
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
