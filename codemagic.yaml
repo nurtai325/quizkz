@@ -1,0 +1,5 @@
+scripts:
+  - name: Increment build number
+    script: |
+      cd ios
+      agvtool new-version -all $BUILD_NUMBER
